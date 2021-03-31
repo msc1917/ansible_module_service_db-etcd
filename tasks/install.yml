@@ -1,0 +1,14 @@
+---
+- name: Install etcd-package
+  apt:
+    name: [ 'etcd' ]
+    state: present
+    update_cache: no
+  become: yes
+
+# - name: Install etcd-client-package 
+#   apt:
+#     name: [ 'etcd-client' ]
+#     state: present
+#     update_cache: no
+#   become: yes
