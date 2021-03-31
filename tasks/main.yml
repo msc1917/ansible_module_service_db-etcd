@@ -1,6 +1,6 @@
 ---
-- name: Install SSH
+- name: Install etcd
   include_tasks: install.yml
   
-- name: Setup SSH
+- name: Setup etcd
   include_tasks: setup.yml
