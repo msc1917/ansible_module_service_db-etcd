@@ -1,6 +1,9 @@
 ---
 - name: Install etcd
   include_tasks: install.yml
+  when: 
+  - etcd_server is defined
+
   
 - name: Setup etcd
   include_tasks: setup.yml
